@@ -16,8 +16,8 @@
 
   --radius: 18px;
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 8px 24px rgba(0, 0, 0, 0.35);
-  --page-w: min(1100px, 96vw);
-  --page-h: min(720px, 78vh);
+  --page-w: min(1360px, 96vw);
+  --page-h: min(800px, 80vh);
   --transition: cubic-bezier(.22, .61, .36, 1);
 }
 
@@ -167,15 +167,15 @@ html, body {
   max-width: 760px;
 }
 .cover-text h1 {
-  font-size: clamp(34px, 5.2vw, 60px);
-  margin: 0 0 14px;
+  font-size: clamp(38px, 5.8vw, 72px);
+  margin: 0 0 16px;
   font-weight: 700;
   letter-spacing: -0.01em;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
   line-height: 1.2;
 }
 .cover-text .subtitle {
-  font-size: clamp(15px, 1.6vw, 19px);
+  font-size: clamp(17px, 1.85vw, 23px);
   font-family: var(--sans);
   color: var(--silver);
   margin: 0 0 24px;
@@ -195,51 +195,52 @@ html, body {
 /* 장면 페이지 */
 .page.scene {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   background: linear-gradient(135deg, #11163a 0%, #0a0d2e 100%);
 }
 .scene-img {
   position: relative;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-color: #1a1f3a;
+  background-repeat: no-repeat;
+  background-color: #0a0d2e;
 }
 .scene-img::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(90deg, transparent 70%, rgba(10, 13, 46, 0.4) 100%);
+  background: linear-gradient(90deg, transparent 75%, rgba(10, 13, 46, 0.25) 100%);
   pointer-events: none;
 }
 .scene-text {
-  padding: 56px 48px 56px 48px;
+  padding: 60px 54px;
   display: flex; flex-direction: column; justify-content: center;
-  gap: 18px;
+  gap: 20px;
   position: relative;
 }
 .scene-text::before {
   content: ""; position: absolute;
-  left: 48px; top: 56px;
-  width: 48px; height: 3px;
+  left: 54px; top: 60px;
+  width: 64px; height: 4px;
   background: var(--gold);
   border-radius: 2px;
 }
 .scene-num {
   font-family: var(--sans);
   color: var(--gold);
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.2em;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 .scene-title {
-  font-size: clamp(26px, 3vw, 36px);
+  font-size: clamp(28px, 3.2vw, 42px);
   margin: 0;
   color: var(--ink);
   font-weight: 700;
   line-height: 1.25;
 }
 .scene-body {
-  font-size: clamp(16px, 1.45vw, 19px);
-  line-height: 1.95;
+  font-size: clamp(17px, 1.6vw, 23px);
+  line-height: 2.0;
   color: var(--ink);
   font-family: var(--serif);
   margin: 8px 0 0;

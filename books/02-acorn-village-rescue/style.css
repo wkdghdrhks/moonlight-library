@@ -20,8 +20,8 @@
   --radius: 22px;
   --shadow: 0 20px 60px rgba(74, 59, 34, 0.18), 0 4px 14px rgba(74, 59, 34, 0.10);
   --shadow-soft: 0 8px 20px rgba(74, 59, 34, 0.12);
-  --page-w: min(1180px, 96vw);
-  --page-h: min(740px, 78vh);
+  --page-w: min(1360px, 96vw);
+  --page-h: min(800px, 80vh);
   --transition: cubic-bezier(.22, .61, .36, 1);
 }
 
@@ -150,6 +150,8 @@ html, body {
 .cover-img {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--paper-3);
 }
 .cover-img::after {
   content: ""; position: absolute; inset: 0;
@@ -163,15 +165,15 @@ html, body {
   max-width: 800px;
 }
 .cover-text h1 {
-  font-size: clamp(36px, 5.5vw, 64px);
-  margin: 0 0 14px;
+  font-size: clamp(38px, 5.8vw, 72px);
+  margin: 0 0 16px;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.15;
   text-shadow: 0 2px 0 rgba(255, 255, 255, 0.6);
 }
 .cover-text .subtitle {
-  font-size: clamp(16px, 1.7vw, 20px);
+  font-size: clamp(17px, 1.85vw, 23px);
   font-family: var(--sans);
   color: var(--ink-soft);
   margin: 0 0 24px;
@@ -191,29 +193,31 @@ html, body {
 /* 챕터 오프너 */
 .page.chapter-opener {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   background: var(--paper-2);
 }
 .chapter-opener .img-side {
   position: relative;
-  background-size: cover; background-position: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--paper-3);
   border-right: 2px dashed rgba(74, 59, 34, 0.15);
 }
 .chapter-opener .text-side {
-  padding: 64px 52px;
+  padding: 64px 56px;
   display: flex; flex-direction: column; justify-content: center;
-  gap: 18px;
+  gap: 20px;
 }
 .chapter-opener .chapter-mark {
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.3em;
   color: var(--orange);
   font-weight: 700;
 }
 .chapter-opener .chapter-big-title {
-  font-size: clamp(30px, 3.5vw, 42px);
+  font-size: clamp(32px, 3.8vw, 52px);
   margin: 0;
   line-height: 1.2;
   color: var(--ink-deep);
@@ -221,16 +225,16 @@ html, body {
 }
 .chapter-opener .chapter-summary {
   font-family: var(--sans);
-  font-size: clamp(14px, 1.3vw, 16px);
+  font-size: clamp(15px, 1.45vw, 19px);
   color: var(--ink-soft);
-  margin: 4px 0 18px;
-  line-height: 1.6;
-  padding-bottom: 18px;
+  margin: 4px 0 20px;
+  line-height: 1.65;
+  padding-bottom: 20px;
   border-bottom: 3px dotted rgba(74, 59, 34, 0.2);
 }
 .chapter-opener .chapter-body {
-  font-size: clamp(16px, 1.45vw, 19px);
-  line-height: 1.95;
+  font-size: clamp(17px, 1.6vw, 23px);
+  line-height: 2.0;
   color: var(--ink);
   margin: 0;
   white-space: pre-line;
@@ -239,48 +243,50 @@ html, body {
 /* 일반 장면 페이지 */
 .page.scene {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   background: var(--paper-2);
 }
 .scene-img {
   position: relative;
-  background-size: cover; background-position: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--paper-3);
   border-right: 2px dashed rgba(74, 59, 34, 0.15);
 }
 .scene-text {
-  padding: 60px 50px;
+  padding: 60px 54px;
   display: flex; flex-direction: column; justify-content: center;
-  gap: 16px;
+  gap: 18px;
   position: relative;
 }
 .scene-text .scene-num {
   font-family: var(--sans);
   color: var(--orange);
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.2em;
   font-weight: 700;
 }
 .scene-text .scene-title {
-  font-size: clamp(24px, 2.8vw, 34px);
+  font-size: clamp(26px, 3vw, 40px);
   margin: 0;
   color: var(--ink-deep);
   font-weight: 700;
   line-height: 1.25;
 }
 .scene-text .scene-body {
-  font-size: clamp(16px, 1.45vw, 19px);
-  line-height: 1.95;
+  font-size: clamp(17px, 1.6vw, 23px);
+  line-height: 2.0;
   color: var(--ink);
-  margin: 6px 0 0;
+  margin: 8px 0 0;
   white-space: pre-line;
   letter-spacing: 0.005em;
 }
 .scene-text::before {
   content: "";
   position: absolute;
-  left: 50px; top: 60px;
-  width: 56px; height: 4px;
+  left: 54px; top: 60px;
+  width: 64px; height: 4px;
   background: var(--yellow);
   border-radius: 2px;
 }
