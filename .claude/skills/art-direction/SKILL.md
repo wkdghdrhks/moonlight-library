@@ -51,6 +51,40 @@ style_suffix: "cute hand-drawn doodle illustration, colored pencil and marker te
 - 색은 평면적으로 채우되 "colored pencil texture" 로 깊이감
 - 동물 캐릭터에 매우 잘 어울리는 스타일
 
+## Object/Prop 시그니처 — 캐릭터 외 등장물의 일관성
+
+**캐릭터만 시그니처화 하면 안 된다.** 동화에서 반복 등장하는 **사물·소품·탈것**도 동일한 외형으로 표현되어야 한다. 그렇지 않으면 "page 17에는 빨강 줄무늬 sailboat이었는데 page 19에는 갈색 rowboat가 되는" 일관성 붕괴가 발생한다.
+
+### 어떤 사물을 시그니처화 해야 하는가
+- 2개 이상의 장면에 반복 등장하는 핵심 소품 (탈것, 도구, 의상, 마법 아이템)
+- 이야기의 정체성을 형성하는 사물 (예: 도토리 시계, 마법 책)
+- 시각적으로 명확한 디테일을 가진 모든 사물
+
+### 시그니처 작성 방법
+캐릭터 시그니처와 똑같이, JSON 의 `prop_signatures` 또는 `object_signatures` 필드를 두고 한 문장으로 외형을 고정:
+
+```json
+"object_signatures": {
+  "두두의 배": "a medium-sized doodle-style wooden sailboat with red-and-white horizontal striped hull made of visible wooden planks, a single tall central mast with a triangular sail showing red and white vertical stripes, a small red triangular pennant flag at the top of the mast, wooden oars resting on the sides, drawn with wobbly hand-drawn outlines and colored pencil texture",
+  "도토리 시계": "a giant bronze acorn-shaped tower clock with a round white clock face showing roman numerals, capped with a small acorn-shape on top, body etched with simple gear patterns"
+}
+```
+
+### 시그니처 강제 규칙
+- 사물이 등장하는 **모든** 장면 프롬프트에 시그니처를 그대로 포함 (캐릭터 시그니처와 동일 방식)
+- "rowing" 같은 행위 묘사를 추가할 때도 "rowing the same sailboat with oars" 처럼 **기존 사물 외형을 유지하는 방식**으로 작성. 동사가 사물 형태를 변형시키지 않도록.
+- 시점이 다른 장면(원경/근경/뒤에서)도 같은 사물임을 강제 — "viewed from behind, the same boat as in previous scenes ..."
+- 사물이 부서지거나 변형되는 경우만 예외 (그 경우엔 변형 후 새 시그니처를 정의)
+
+### 실제 사례 — 도토리 마을 구출 작전 회고
+초기 31장 생성에서 page 17~20 에 등장한 배가 5장 모두 다른 형태로 그려졌다:
+- 17: 빨강흰 sailboat ✅
+- 18: 노랑파랑 돛 sailboat ❌
+- 19: 갈색 rowboat (돛 사라짐) ❌
+- 20: 작은 노 보트 ❌
+
+이유: "small red-striped sailboat" 만 공유 묘사, 디테일이 프롬프트마다 달라서 codex 가 자율적으로 다른 배를 생성. 해결: object_signatures 에 "두두의 배" 고정 후 18~20 재생성.
+
 ## 프롬프트 작성 템플릿
 
 각 장면은 다음 구조로 영문 작성:
