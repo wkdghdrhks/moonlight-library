@@ -1,0 +1,20 @@
+# Fairy Tale 프로젝트
+
+## 하네스: 동화책 자동 제작
+
+**목표:** 시나리오 작성 → 일관된 그림책 일러스트 → 정적 HTML 책 뷰어를 한 번에 완성.
+
+**트리거:** 동화책/그림책/동화 시나리오/책 뷰어 관련 요청이 들어오면 `fairy-tale-orchestrator` 스킬을 사용하라. 단순 질문(예: "이 폴더에 뭐가 있어?") 은 직접 응답.
+
+**에이전트:** `.claude/agents/` — storyteller, art-director, illustrator, book-builder, qa-reviewer
+**스킬:** `.claude/skills/` — fairy-tale-orchestrator (오케스트레이터), story-writing, art-direction, image-generation-batch, book-viewer
+**산출물 위치:** `book/` (최종), `_workspace/` (중간)
+
+**이미지 생성 의존성:** `codex-image` 스킬 (codex CLI + ChatGPT OAuth 로그인 필요). Phase 1 에서 `codex login status` 로 사전 확인.
+
+**변경 이력:**
+
+| 날짜 | 변경 내용 | 대상 | 사유 |
+|------|----------|------|------|
+| 2026-05-22 | 초기 하네스 구성 (에이전트 5 + 스킬 5) | 전체 | 동화책 제작 자동화 |
+| 2026-05-22 | index.html 을 프로젝트 루트로 이동, 자원 경로 재배치 | index.html, book/book.json, book/book.js, _workspace/qa_verify.py | 진입점을 루트로 노출 |

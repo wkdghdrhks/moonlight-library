@@ -1,0 +1,59 @@
+{
+  "style_guide": {
+    "art_style": "Soft watercolor children's storybook illustration in the gentle style of Korean and Japanese picture books",
+    "color_palette": "deep midnight navy and indigo, soft moonlit silver and pearl white, warm honey gold and amber accents, gentle violet shadows",
+    "lighting": "soft moonlight as primary, warm honey-gold glow from magical books as secondary, painterly diffused shadows",
+    "composition_rule": "wide horizontal compositions with generous breathing room, child as visual anchor, intentional empty area for text overlay either at top or bottom",
+    "style_suffix": "soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+  },
+  "character_signatures": {
+    "보리": "a six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern, little yellow slippers, round soft cheeks and large gentle eyes",
+    "별여우": "a small luminous white fox kit the size of a kitten, with a star-tipped glowing tail leaving faint sparkles, soft silver-dotted constellation pattern on its back, large violet eyes, shy gentle expression"
+  },
+  "cover": {
+    "filename": "cover.png",
+    "prompt": "Soft watercolor children's storybook cover illustration. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern and little yellow slippers, standing on a cloud under a vast starry midnight sky, holding a small glowing golden book that floats just above her open palms. Beside her a small luminous white fox kit with a star-tipped glowing tail peeks gently. The composition has a large empty area at the top of the sky intentionally clear of details for title text placement, the characters anchored in the lower third. Magical golden light radiating softly from the book, moonlit silver clouds, gentle violet shadows, dreamy and inviting. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "filename": "scene_01.png",
+      "prompt": "Soft watercolor children's storybook illustration. Interior of a small cozy child's bedroom at night, soft blue moonlight streaming through a round window in a long ray onto the bed. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern, lies on her back hugging a plush pillow, looking up at the ceiling with sleepless gentle eyes. Wallpaper with tiny star patterns, a small wooden desk with picture books and a stuffed toy, slippers on the floor. Wide horizontal composition with space at top showing the window and moonlight. Quiet hushed mood. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+    },
+    {
+      "scene_number": 2,
+      "filename": "scene_02.png",
+      "prompt": "Soft watercolor children's storybook illustration. View inside a child's bedroom at night. Outside the round window, a small open book floats and flutters like a butterfly, its open pages glowing with warm honey-gold light, tiny golden sparkles drifting around it. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern, sits up in bed with eyes wide round in wonder, blanket draped over her lap. Moonlit blue tones contrast the warm magical glow at the window. Wide horizontal composition. Mysterious and enchanting mood. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+    },
+    {
+      "scene_number": 3,
+      "filename": "scene_03.png",
+      "prompt": "Soft watercolor children's storybook illustration. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern and little yellow slippers, tiptoes upward along a path made of softly glowing book pages that float and form stepping stones across silver moonlit clouds. The small glowing golden book leads ahead like a guide. Below, distant tiny rooftops of her village under the night sky. Above, brilliant stars closer than usual. Wide upward-diagonal composition with empty sky for text. Excited adventurous mood. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+    },
+    {
+      "scene_number": 4,
+      "filename": "scene_04.png",
+      "prompt": "Soft watercolor children's storybook illustration. A grand round library building made of moonlight and silver pillars floats among the clouds, its impossibly tall bookshelves reaching up to a glass dome ceiling that reveals the starry night. Books with soft wings flutter freely through the air like birds. Everything bathed in silvery moonlight with warm honey-gold accents from the floating books. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern, stands at the entrance with mouth slightly open in awe, small in the grand space to convey scale. Wide composition emphasizing vertical grandeur with space for text at top. Magical wondrous mood. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+    },
+    {
+      "scene_number": 5,
+      "filename": "scene_05.png",
+      "prompt": "Soft watercolor children's storybook illustration. Between two towering library bookshelves, a small luminous white fox kit the size of a kitten with a star-tipped glowing tail leaving faint sparkles, soft silver-dotted constellation pattern on its back and large violet eyes, peeks out shyly. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern, kneels down softly to meet the fox at eye level, smiling warmly with one hand gently extended. Tiny golden light particles drift between them. Soft focus on the two characters in the center, bookshelves blurring into warm bokeh behind. Wide composition. Tender and tender mood. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+    },
+    {
+      "scene_number": 6,
+      "filename": "scene_06.png",
+      "prompt": "Soft watercolor children's storybook illustration. A small luminous white fox kit with a star-tipped glowing tail and large violet eyes, holds open a large picture book whose illustrations are visibly fading and losing color, the page edges turning to pale grey while the center barely keeps a hint of warm color, as if the story is falling asleep. The fox's expression is gently sorrowful. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern, sits across, reaching one hand toward the book with a concerned caring expression. Soft moonlight in the library setting blurred behind them. Wide intimate composition focusing on the book between them. Melancholy but hopeful mood. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+    },
+    {
+      "scene_number": 7,
+      "filename": "scene_07.png",
+      "prompt": "Soft watercolor children's storybook illustration. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern, sits cross-legged beside the small luminous white fox kit with star-tipped glowing tail, their heads gently leaning together over an open picture book. From the book, vivid colors burst and bloom upward like soft fireworks - a rainbow arches, a small rabbit-shape made of light hops out, tiny birds of light swirl around the two friends. Both characters laughing with bright joyful expressions. The library background glows warmly now, infused with returning color. Wide dynamic composition full of warmth. Joyful and magical mood. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+    },
+    {
+      "scene_number": 8,
+      "filename": "scene_08.png",
+      "prompt": "Soft watercolor children's storybook illustration. A six-year-old Korean girl named Bori with shoulder-length chestnut-brown bob hair, wearing soft pale-blue pajama dress with tiny scattered star pattern, sleeps peacefully back in her cozy bedroom bed, a tiny gentle smile on her lips, blanket tucked up to her chin. On the bedside desk, a small picture book glows softly with warm golden light. Through the round window, the full moon shines and a faint silhouette of the small luminous fox with a star-tipped tail can be seen on the windowsill outside. Soft golden stardust gently drifts through the room. Wide horizontal composition with space at top showing the window and moon. Peaceful tender bedtime mood. soft watercolor children's storybook illustration, hand-painted with visible brush texture, gentle moonlit palette of midnight blue silver violet and warm honey gold, dreamy nocturnal atmosphere, child-friendly and tender, painterly soft edges, no text no letters no watermark no signature"
+    }
+  ]
+}
