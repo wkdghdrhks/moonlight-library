@@ -38,7 +38,7 @@
 
   async function loadData() {
     try {
-      const res = await fetch('book/book.json', { cache: 'no-store' });
+      const res = await fetch('book.json', { cache: 'no-store' });
       if (!res.ok) throw new Error('book.json fetch failed');
       return await res.json();
     } catch (e) {

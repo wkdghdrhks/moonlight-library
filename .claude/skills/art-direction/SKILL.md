@@ -35,6 +35,22 @@ style_suffix: "Studio Ghibli inspired hand-drawn animation style, lush nature, s
 style_suffix: "modern flat illustration, geometric shapes, limited pastel palette, clean lines, contemporary children's book style, no text no letters no watermark"
 ```
 
+### 프리셋 D: Doodle 색연필+마카 (귀엽고 아기자기)
+```
+art_style: "hand-drawn doodle illustration with colored pencil and marker texture, cute and whimsical children's picture book style"
+color_palette: "bright cheerful palette - warm yellows, soft pinks, fresh greens, sky blues, with playful pops of orange and lavender. paper-white background"
+lighting: "flat playful lighting, no harsh shadows, hand-drawn shading with crosshatching and scribble textures"
+style_suffix: "cute hand-drawn doodle illustration, colored pencil and marker texture, visible pencil strokes and marker bleed, wobbly playful outlines drawn in dark brown or black marker, off-white paper background with subtle paper grain, simple expressive cartoon faces with dot eyes and small smiles, slightly imperfect childlike charm, scribble shading, kawaii kids notebook doodle style, bright cheerful palette, flat coloring with crayon texture, no text no letters no watermark no signature"
+```
+
+**Doodle 프리셋 가이드:**
+- 캐릭터는 **단순한 외형 + 큰 특징**(귀, 꼬리, 무늬)으로 표현. 사실적 비례 X
+- 윤곽선이 살아 있어야 함 — "marker outline" 키워드 강조
+- 배경은 종이 질감이 보이도록 — "off-white paper background"
+- 너무 디테일하게 묘사하지 말 것 (doodle 본질 = 단순한 즐거움)
+- 색은 평면적으로 채우되 "colored pencil texture" 로 깊이감
+- 동물 캐릭터에 매우 잘 어울리는 스타일
+
 ## 프롬프트 작성 템플릿
 
 각 장면은 다음 구조로 영문 작성:

@@ -1,6 +1,6 @@
 ---
 name: fairy-tale-orchestrator
-description: "동화책 자동 제작 오케스트레이터. 시나리오 작성부터 이미지 생성, HTML 책 뷰어 빌드까지 5명의 에이전트 팀(storyteller, art-director, illustrator, book-builder, qa-reviewer)을 조율한다. 트리거: '동화책 만들어', '동화 만들어줘', '그림책 제작', '동화 시나리오와 이미지', '아이용 책 만들기', 'fairy tale book', 'storybook', '동화책 뷰어'. 후속 작업: '동화 다시 써', '이미지 다시 그려', '장면 N 수정', '스토리 보완', '뷰어 디자인 변경', '이전 책 개선', '책 업데이트' 등 동화 관련 모든 후속 요청도 반드시 이 스킬을 사용."
+description: "동화책 자동 제작 오케스트레이터. 시나리오 작성부터 이미지 생성, HTML 책 뷰어 빌드까지 6명의 에이전트 팀(storyteller, art-director, illustrator, book-builder, qa-reviewer, librarian)을 조율한다. 단편(6~10페이지)과 장편(30+페이지) 모두 지원. doodle/watercolor/Ghibli/flat 스타일 선택 가능. 트리거: '동화책 만들어', '동화 만들어줘', '그림책 제작', '두 번째 동화', '새 동화', '동물 동화', '모험 동화', '장편 동화', '챕터 동화', 'doodle 동화', '색연필 동화', '아이용 책 만들기', 'fairy tale book', 'storybook', '동화책 뷰어'. 후속 작업: '동화 다시 써', '이미지 다시 그려', '장면 N 수정', '스토리 보완', '뷰어 디자인 변경', '이전 책 개선', '책 업데이트', '라이브러리 갱신', '도서관 홈 수정' 등 동화 관련 모든 후속 요청도 반드시 이 스킬을 사용."
 ---
 
 # Fairy Tale Orchestrator — 동화책 제작 통합 워크플로우

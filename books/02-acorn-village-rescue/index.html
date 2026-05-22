@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fff8e7">
+  <title>도토리 마을 구출 작전</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-bg" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="book-meta">
+      <a href="../../" class="back-link" title="도서관으로">← 도서관</a>
+      <span id="chapter-label" class="chapter-label">Chapter 1 · 도토리 마을의 아침</span>
+    </div>
+    <div class="top-actions">
+      <button id="toc-btn" class="ghost-btn" title="목차" aria-label="목차 열기">☰</button>
+      <button id="restart-btn" class="ghost-btn" title="처음부터" aria-label="처음부터">⟲</button>
+      <button id="fullscreen-btn" class="ghost-btn" title="전체화면" aria-label="전체화면">⤢</button>
+    </div>
+  </header>
+
+  <main id="book" class="book" tabindex="0" aria-label="동화책 본문">
+    <div class="page-track" id="page-track"></div>
+    <button class="edge-nav left" id="edge-prev" aria-label="이전 페이지" tabindex="-1"></button>
+    <button class="edge-nav right" id="edge-next" aria-label="다음 페이지" tabindex="-1"></button>
+  </main>
+
+  <nav class="controls" aria-label="페이지 컨트롤">
+    <button id="prev" class="nav-btn" aria-label="이전 페이지">◀ 이전</button>
+    <div class="indicator-wrap">
+      <span id="indicator">1 / 32</span>
+      <div id="progress" class="progress" aria-hidden="true"><div id="progress-fill" class="progress-fill"></div></div>
+    </div>
+    <button id="next" class="nav-btn" aria-label="다음 페이지">다음 ▶</button>
+  </nav>
+
+  <aside id="toc-panel" class="toc-panel" aria-hidden="true">
+    <div class="toc-header">
+      <span>목차</span>
+      <button id="toc-close" class="ghost-btn small" aria-label="목차 닫기">✕</button>
+    </div>
+    <ol id="toc-list" class="toc-list"></ol>
+  </aside>
+  <div id="toc-overlay" class="toc-overlay" aria-hidden="true"></div>
+
+  <script src="book.js"></script>
+</body>
+</html>

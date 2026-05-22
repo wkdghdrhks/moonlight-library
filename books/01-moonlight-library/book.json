@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "cover",
-      "image": "book/images/cover.png",
+      "image": "images/cover.png",
       "title": "달빛 도서관과 보리",
       "subtitle": "잠 못 드는 밤, 책 한 권이 날아왔어요",
       "author": "AI 동화 작가"
@@ -15,7 +15,7 @@
       "number": 1,
       "title": "잠 못 드는 밤",
       "body": "보리는 이불 속에서 데구르르 뒤척였어요. 창밖에는 둥근 보름달이 빛나고 있었지요. \"오늘은 잠이 안 와…\" 보리는 베개를 꼭 끌어안고 한숨을 폭 쉬었답니다.",
-      "image": "book/images/scene_01.png",
+      "image": "images/scene_01.png",
       "mood": "고요한"
     },
     {
@@ -23,7 +23,7 @@
       "number": 2,
       "title": "창밖의 부드러운 빛",
       "body": "그때 창밖에서 사르륵, 종이 넘기는 소리가 들렸어요. 보리가 눈을 동그랗게 떴더니, 작은 책 한 권이 나비처럼 펄럭이며 다가오고 있었지 뭐예요! 책에서는 따뜻한 금빛이 새어 나왔어요.",
-      "image": "book/images/scene_02.png",
+      "image": "images/scene_02.png",
       "mood": "신비로운"
     },
     {
@@ -31,7 +31,7 @@
       "number": 3,
       "title": "책을 따라가요",
       "body": "보리는 살그머니 창문을 열었어요. 책은 \"따라와\" 하듯 폴짝폴짝 앞장섰지요. 구름 위로 종이 페이지가 한 장씩 깔리며 길이 되었답니다. 보리는 슬리퍼를 신고 사뿐사뿐 걸어 올라갔어요.",
-      "image": "book/images/scene_03.png",
+      "image": "images/scene_03.png",
       "mood": "설레는"
     },
     {
@@ -39,7 +39,7 @@
       "number": 4,
       "title": "달빛 도서관",
       "body": "구름을 다 지나자, 와아- 거대한 달빛 도서관이 떠 있었어요! 책장은 하늘 끝까지 닿아 있고, 책들이 새처럼 날아다녔지요. 모든 것이 은빛 달빛에 잠겨 있었답니다.",
-      "image": "book/images/scene_04.png",
+      "image": "images/scene_04.png",
       "mood": "경이로운"
     },
     {
@@ -47,7 +47,7 @@
       "number": 5,
       "title": "수줍은 친구를 만나요",
       "body": "책장 사이에서 빛나는 무언가가 살짝 고개를 내밀었어요. 별처럼 반짝이는 꼬리를 가진 작은 여우였답니다. \"안녕… 나는 별여우야.\" 별여우는 부끄러운 듯 작게 속삭였어요.",
-      "image": "book/images/scene_05.png",
+      "image": "images/scene_05.png",
       "mood": "다정한"
     },
     {
@@ -55,7 +55,7 @@
       "number": 6,
       "title": "색이 빠진 그림책",
       "body": "별여우는 한 권의 그림책을 보여 주었어요. 그런데 어머나, 책의 색이 흐릿하게 바래고 있었지 뭐예요. \"오랫동안 아무도 읽어 주지 않아서 이야기가 잠들고 있어.\" 별여우의 목소리가 떨렸어요.",
-      "image": "book/images/scene_06.png",
+      "image": "images/scene_06.png",
       "mood": "안타까운"
     },
     {
@@ -63,7 +63,7 @@
       "number": 7,
       "title": "함께 읽는 이야기",
       "body": "보리는 별여우의 곁에 앉아 책을 펼쳤어요. \"옛날 옛날에…\" 보리가 부드럽게 읽어 가자 책에서 색깔들이 폭, 폭 피어났답니다. 그림 속 토끼가 깡충, 무지개가 활짝! 둘은 까르르 함께 웃었어요.",
-      "image": "book/images/scene_07.png",
+      "image": "images/scene_07.png",
       "mood": "환희의"
     },
     {
@@ -71,13 +71,13 @@
       "number": 8,
       "title": "달콤한 꿈",
       "body": "이야기가 끝나자, 보리는 어느새 자기 방 침대에 폭 안겨 있었어요. 머리맡에는 그 작은 책이 사르륵 빛나고 있었고요. 보리는 살며시 웃으며 잠이 들었어요. \"잘 자, 별여우. 또 만나자.\"",
-      "image": "book/images/scene_08.png",
+      "image": "images/scene_08.png",
       "mood": "평온한"
     },
     {
       "type": "ending",
       "message": "잠이 안 오는 밤이면 책을 펼쳐 보세요.\n어쩌면 작은 친구가 당신을 기다리고 있을지 몰라요.",
-      "image": "book/images/scene_08.png"
+      "image": "images/scene_08.png"
     }
   ]
 }

@@ -68,10 +68,27 @@ html, body {
   font-size: 14px;
   letter-spacing: 0.02em;
 }
+.book-meta { display: flex; align-items: center; }
 .book-meta #meta-title {
   font-family: var(--serif);
   color: var(--silver);
   font-size: 15px;
+}
+.back-link {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-family: var(--sans);
+  font-size: 13px;
+  margin-right: 14px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s var(--transition);
+}
+.back-link:hover {
+  color: var(--gold);
+  background: rgba(243, 201, 105, 0.08);
+  border-color: rgba(243, 201, 105, 0.4);
 }
 .top-actions { display: flex; gap: 8px; }
 .ghost-btn {

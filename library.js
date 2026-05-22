@@ -1,0 +1,77 @@
+// 달빛 도서관 — 라이브러리 홈
+(() => {
+  const INLINE_FALLBACK = {
+    "site_title": "달빛 도서관",
+    "tagline": "AI가 그리고 쓴 동화책 모음",
+    "books": [
+      { "slug": "01-moonlight-library", "title": "달빛 도서관과 보리", "subtitle": "잠 못 드는 밤, 책 한 권이 날아왔어요", "cover": "books/01-moonlight-library/images/cover.png", "pages": 10, "style": "수채화", "tags": ["우정", "상상", "잠자리"], "url": "books/01-moonlight-library/", "added": "2026-05-22" },
+      { "slug": "02-acorn-village-rescue", "title": "도토리 마을 구출 작전", "subtitle": "사라진 도토리 시계와 다섯 친구의 모험", "cover": "books/02-acorn-village-rescue/images/cover.png", "pages": 32, "style": "doodle", "tags": ["모험", "동물", "협동"], "url": "books/02-acorn-village-rescue/", "added": "2026-05-22" }
+    ]
+  };
+
+  async function loadLibrary() {
+    try {
+      const res = await fetch('books/library.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('library.json fetch failed');
+      return await res.json();
+    } catch (e) {
+      console.info('[library] fetch unavailable (likely file://), using inline fallback.');
+      return INLINE_FALLBACK;
+    }
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
+  }
+
+  function renderCard(book) {
+    const cover = book.cover
+      ? `<div class="card-cover" style="background-image:url('${escapeHtml(book.cover)}')"></div>`
+      : `<div class="card-cover"><div class="placeholder">표지 준비 중</div></div>`;
+    const pages = book.pages ? `<span class="badge">${book.pages}p</span>` : '';
+    const style = book.style ? `<span class="badge style">${escapeHtml(book.style)}</span>` : '';
+    const tags = (book.tags || []).slice(0, 2).map(t => `<span class="badge tag">${escapeHtml(t)}</span>`).join('');
+    const subtitle = book.subtitle ? `<p class="card-subtitle">${escapeHtml(book.subtitle)}</p>` : '';
+    return `
+      <a class="book-card" href="${escapeHtml(book.url)}" aria-label="${escapeHtml(book.title)} 읽기">
+        ${cover}
+        <div class="card-info">
+          <h2>${escapeHtml(book.title)}</h2>
+          ${subtitle}
+          <div class="card-meta">
+            ${pages}${style}${tags}
+          </div>
+        </div>
+      </a>
+    `;
+  }
+
+  async function init() {
+    const data = await loadLibrary();
+    document.title = data.site_title || '달빛 도서관';
+    const titleEl = document.getElementById('site-title');
+    const taglineEl = document.getElementById('tagline');
+    if (titleEl && data.site_title) titleEl.textContent = data.site_title;
+    if (taglineEl && data.tagline) taglineEl.textContent = data.tagline;
+
+    const grid = document.getElementById('book-grid');
+    const count = document.getElementById('book-count');
+    const books = data.books || [];
+    if (count) count.textContent = books.length === 0 ? '비어 있음' : `${books.length}권의 책`;
+
+    if (books.length === 0) {
+      grid.innerHTML = `
+        <div class="empty-state">
+          ✨ 곧 새 책이 도착해요
+          <span>AI 동화 작가들이 첫 이야기를 그리는 중...</span>
+        </div>`;
+      return;
+    }
+
+    grid.innerHTML = books.map(renderCard).join('');
+  }
+
+  init();
+})();
