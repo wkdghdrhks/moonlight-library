@@ -2,7 +2,7 @@
 
 > AI가 그리고 쓴 동화책 모음.
 
-**👉 [도서관 입장하기 (GitHub Pages)](https://revfactory.github.io/fairy-tale-moonlight-library/)**
+**👉 [도서관 입장하기 (GitHub Pages)](https://revfactory.github.io/moonlight-library/)**
 
 ## 책 목록
 
