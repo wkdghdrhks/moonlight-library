@@ -15,3 +15,6 @@ _workspace/imagegen_args.tsv
 *.swp
 *.log
 __pycache__/
+
+# 이미지 압축 전 원본 백업 (배포/저장소에 포함하지 않음)
+_originals/

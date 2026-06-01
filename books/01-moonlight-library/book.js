@@ -30,11 +30,22 @@
   const restartBtn = $('#restart-btn');
   const fullscreenBtn = $('#fullscreen-btn');
   const bookEl = $('#book');
+  const playBtn = $('#play-btn');
+  const soundBtn = $('#sound-btn');
 
   let data = null;
   let currentIdx = 0;
   let pageEls = [];
   let isAnimating = false;
+
+  // ── 자동 낭독 + BGM 상태 ──
+  let isPlaying = false;
+  let bgmOn = true;
+  let bgm = null;
+  let narrationTimer = null;
+  let preferredVoice = null;
+  const narrationAudio = new Audio();
+  narrationAudio.preload = 'auto';
 
   async function loadData() {
     try {
@@ -172,8 +183,15 @@
     }, 560);
   }
 
-  function next() { goTo(currentIdx + 1); }
-  function prev() { goTo(currentIdx - 1); }
+  function reSyncNarration() {
+    if (!isPlaying) return;
+    clearTimeout(narrationTimer);
+    if ('speechSynthesis' in window) speechSynthesis.cancel();
+    try { narrationAudio.pause(); } catch (e) {}
+    setTimeout(() => { if (isPlaying) speakCurrent(); }, 580);
+  }
+  function next() { goTo(currentIdx + 1); reSyncNarration(); }
+  function prev() { goTo(currentIdx - 1); reSyncNarration(); }
 
   function bindEvents() {
     nextBtn.addEventListener('click', next);
@@ -181,6 +199,8 @@
     edgePrev.addEventListener('click', prev);
     edgeNext.addEventListener('click', next);
     restartBtn.addEventListener('click', () => goTo(0));
+    if (playBtn) playBtn.addEventListener('click', togglePlay);
+    if (soundBtn) soundBtn.addEventListener('click', toggleSound);
 
     fullscreenBtn.addEventListener('click', () => {
       const doc = document;
@@ -231,11 +251,154 @@
     });
   }
 
+  // ───────────────────── 자동 낭독 + BGM ─────────────────────
+  function pickVoice() {
+    if (!('speechSynthesis' in window)) return;
+    const all = speechSynthesis.getVoices() || [];
+    const ko = all.filter(v => /ko[-_]?KR/i.test(v.lang) || /korean|한국/i.test(v.name));
+    const male = ko.find(v => /injoon|male|남성|남자|hyunsu/i.test(v.name));
+    preferredVoice = male || ko[0] || null;
+  }
+
+  function pageText(p) {
+    if (!p) return '';
+    if (p.type === 'cover') return [p.title, p.subtitle].filter(Boolean).join('. ');
+    if (p.type === 'ending') return p.message || '';
+    return [p.title, p.body].filter(Boolean).join('. ');
+  }
+
+  function speakCurrent() {
+    if (!isPlaying) return;
+    const p = data.pages[currentIdx];
+    if (p && p.audio) {
+      try {
+        narrationAudio.src = p.audio;
+        narrationAudio.onended = () => { if (isPlaying) advanceAfterNarration(); };
+        narrationAudio.onerror = () => { if (isPlaying) advanceAfterNarration(); };
+        narrationAudio.play().catch(() => scheduleAdvanceByTimer());
+        return;
+      } catch (e) {}
+    }
+    if (!('speechSynthesis' in window)) { scheduleAdvanceByTimer(); return; }
+    speechSynthesis.cancel();
+    const raw = pageText(p).replace(/\s*\n\s*/g, ' ').trim();
+    if (!raw) { scheduleAdvanceByTimer(); return; }
+    const chunks = raw.match(/[^.!?。…\n]+[.!?。…]*/g) || [raw];
+    let i = 0;
+    const speakNext = () => {
+      if (!isPlaying) return;
+      if (i >= chunks.length) { advanceAfterNarration(); return; }
+      const u = new SpeechSynthesisUtterance(chunks[i].trim());
+      if (preferredVoice) u.voice = preferredVoice;
+      u.lang = (preferredVoice && preferredVoice.lang) || 'ko-KR';
+      u.rate = 0.95; u.pitch = 0.8; u.volume = 1.0;
+      u.onend = () => { i++; speakNext(); };
+      u.onerror = () => { i++; speakNext(); };
+      speechSynthesis.speak(u);
+    };
+    speakNext();
+  }
+
+  function advanceAfterNarration() {
+    clearTimeout(narrationTimer);
+    if (currentIdx >= data.pages.length - 1) { stopPlay(); return; }
+    narrationTimer = setTimeout(() => {
+      if (!isPlaying) return;
+      goTo(currentIdx + 1);
+      setTimeout(() => { if (isPlaying) speakCurrent(); }, 580);
+    }, 900);
+  }
+
+  function scheduleAdvanceByTimer() {
+    clearTimeout(narrationTimer);
+    if (currentIdx >= data.pages.length - 1) { stopPlay(); return; }
+    narrationTimer = setTimeout(() => {
+      if (!isPlaying) return;
+      goTo(currentIdx + 1);
+      setTimeout(() => { if (isPlaying) speakCurrent(); }, 580);
+    }, 6000);
+  }
+
+  function startPlay() {
+    isPlaying = true;
+    if (playBtn) { playBtn.textContent = '⏸'; playBtn.classList.add('playing'); playBtn.title = '낭독 멈춤'; }
+    if (bgmOn) startBGM();
+    speakCurrent();
+  }
+  function stopPlay() {
+    isPlaying = false;
+    if (playBtn) { playBtn.textContent = '▶'; playBtn.classList.remove('playing'); playBtn.title = '자동 낭독'; }
+    clearTimeout(narrationTimer);
+    if ('speechSynthesis' in window) speechSynthesis.cancel();
+    try { narrationAudio.pause(); } catch (e) {}
+    stopBGM();
+  }
+  function togglePlay() { isPlaying ? stopPlay() : startPlay(); }
+
+  function startBGM() {
+    if (bgm) return;
+    try {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      const ctx = new AC();
+      const master = ctx.createGain();
+      master.gain.setValueAtTime(0.0001, ctx.currentTime);
+      master.gain.exponentialRampToValueAtTime(0.06, ctx.currentTime + 3);
+      master.connect(ctx.destination);
+      const chords = [
+        [261.63, 329.63, 392.00],
+        [220.00, 261.63, 329.63],
+        [174.61, 220.00, 261.63],
+        [196.00, 246.94, 293.66],
+      ];
+      const state = { ctx, master, stopped: false, timer: null, idx: 0 };
+      const playChord = () => {
+        if (state.stopped) return;
+        const now = ctx.currentTime;
+        const dur = 4.2;
+        chords[state.idx].forEach(freq => {
+          const o = ctx.createOscillator();
+          const g = ctx.createGain();
+          o.type = 'sine';
+          o.frequency.value = freq;
+          g.gain.setValueAtTime(0, now);
+          g.gain.linearRampToValueAtTime(0.5, now + 1.3);
+          g.gain.linearRampToValueAtTime(0, now + dur);
+          o.connect(g); g.connect(master);
+          o.start(now); o.stop(now + dur + 0.1);
+        });
+        state.idx = (state.idx + 1) % chords.length;
+        state.timer = setTimeout(playChord, dur * 1000 * 0.9);
+      };
+      bgm = {
+        stop() {
+          state.stopped = true;
+          clearTimeout(state.timer);
+          try { master.gain.cancelScheduledValues(ctx.currentTime); master.gain.linearRampToValueAtTime(0.0001, ctx.currentTime + 1); } catch (e) {}
+          setTimeout(() => { try { ctx.close(); } catch (e) {} }, 1200);
+        }
+      };
+      if (ctx.state === 'suspended') ctx.resume();
+      playChord();
+    } catch (e) { bgm = null; }
+  }
+  function stopBGM() { if (bgm) { bgm.stop(); bgm = null; } }
+
+  function toggleSound() {
+    bgmOn = !bgmOn;
+    if (soundBtn) { soundBtn.textContent = bgmOn ? '🔊' : '🔇'; soundBtn.title = bgmOn ? '배경음 끄기' : '배경음 켜기'; }
+    if (bgmOn && isPlaying) startBGM(); else stopBGM();
+  }
+
   async function init() {
     data = await loadData();
     document.title = data.title;
     buildPages();
     bindEvents();
+    if ('speechSynthesis' in window) {
+      pickVoice();
+      speechSynthesis.onvoiceschanged = pickVoice;
+    }
     render();
     preloadImages();
     bookEl.focus();

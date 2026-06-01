@@ -22,3 +22,4 @@
 | 2026-05-22 | 다중책 구조 도입: book/ → books/01-moonlight-library/, 루트는 라이브러리 홈 | books/library.json, index.html, library.{css,js} | 두 번째 동화 추가를 위한 확장 |
 | 2026-05-22 | 하네스 진화: librarian 에이전트 + library-home 스킬, doodle 프리셋, picture-long 장편 모드, 책 뷰어 챕터 목차/진행률 추가 | agents/librarian.md, skills/library-home/, skills/{art-direction,story-writing,book-viewer}/SKILL.md | 30+ 페이지 동물 모험 동화 요청 |
 | 2026-05-22 | 두 번째 책 추가: 『도토리 마을 구출 작전』 (32p, doodle) | books/02-acorn-village-rescue/ | 두 번째 동화 제작 |
+| 2026-05-29 | 세 번째 책 추가: 『종탑 위의 연우』 (20p, doodle, 이미지 수동 Gemini 생성) | books/03-bell-tower-yeonwoo/ | 세 번째 동화 제작 |

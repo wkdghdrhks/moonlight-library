@@ -9,6 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    #play-btn.playing { background:#7c5cff; color:#fff; }
+    @keyframes narrPulse { 0%,100%{ box-shadow:0 0 0 3px rgba(124,92,255,.35);} 50%{ box-shadow:0 0 0 6px rgba(124,92,255,.12);} }
+    #play-btn.playing { animation: narrPulse 1.6s ease-in-out infinite; }
+  </style>
 </head>
 <body>
   <div class="stars-bg" aria-hidden="true"></div>
@@ -19,6 +24,8 @@
       <span id="meta-title">달빛 도서관과 보리</span>
     </div>
     <div class="top-actions">
+      <button id="play-btn" class="ghost-btn" title="자동 낭독" aria-label="자동 낭독 재생/멈춤">▶</button>
+      <button id="sound-btn" class="ghost-btn" title="배경음 끄기" aria-label="배경음 켜기/끄기">🔊</button>
       <button id="restart-btn" class="ghost-btn" title="처음부터">⟲</button>
       <button id="fullscreen-btn" class="ghost-btn" title="전체화면">⤢</button>
     </div>
