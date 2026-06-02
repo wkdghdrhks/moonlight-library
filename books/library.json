@@ -46,6 +46,21 @@
       ],
       "url": "books/03-bell-tower-yeonwoo/",
       "added": "2026-05-29"
+    },
+    {
+      "slug": "04-neverland-yeonwoo",
+      "title": "네버랜드의 연우",
+      "subtitle": "둘째 별을 지나, 어른이 되지 않는 섬으로",
+      "cover": "books/04-neverland-yeonwoo/images/cover.jpg",
+      "pages": 20,
+      "style": "모험 수채화",
+      "tags": [
+        "모험",
+        "우정",
+        "용기"
+      ],
+      "url": "books/04-neverland-yeonwoo/",
+      "added": "2026-06-01"
     }
   ]
 }
