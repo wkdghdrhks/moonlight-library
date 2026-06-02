@@ -1,21 +1,25 @@
 # -*- coding: utf-8 -*-
-"""각 책의 book.json 을 읽어 페이지별 내레이션 mp3 를 edge-tts(InJoon, 따뜻한 남성)로 생성하고
-book.json 에 audio 경로를 채워 넣는다. 진짜 사람이 읽어주는 듯한 동화 낭독."""
+"""각 책의 book.json 을 읽어 페이지별 내레이션 mp3 를 edge-tts(SunHi, 따뜻한 여성/엄마 톤)로 생성하고
+book.json 에 audio 경로를 채워 넣는다. 진짜 엄마가 읽어주는 듯한 동화 낭독.
+제목/챕터 제목은 읽지 않고 동화 내용(body)만 읽는다."""
 import json, os, subprocess, sys
 
 ROOT = r"C:\DongHwa\moonlight-library\books"
-BOOKS = ["01-moonlight-library", "02-acorn-village-rescue", "03-bell-tower-yeonwoo"]
-VOICE = "ko-KR-InJoonNeural"
-RATE = "-8%"     # 살짝 느리게 — 동화 읽어주듯 차분하게
-PITCH = "-2Hz"   # 살짝 낮춰 따뜻한 톤
+BOOKS = ["01-moonlight-library", "02-acorn-village-rescue",
+         "03-bell-tower-yeonwoo", "04-neverland-yeonwoo"]
+VOICE = "ko-KR-SunHiNeural"   # 따뜻한 여성 — 엄마가 읽어주는 톤
+RATE = "-10%"    # 살짝 느리게 — 자장가처럼 차분하게
+PITCH = "+0Hz"   # 자연스러운 음높이 유지(여성 톤은 낮추면 어색)
 
 def narration_text(p):
     t = p.get("type")
     if t == "cover":
+        # 표지는 책 제목+부제만 1회 (도입부 인사 격)
         return ". ".join(x for x in [p.get("title"), p.get("subtitle")] if x)
     if t == "ending":
         return p.get("message", "")
-    return ". ".join(x for x in [p.get("title"), p.get("body")] if x)
+    # scene / chapter-opener 등: 제목 제외, 동화 내용(body)만 낭독
+    return p.get("body", "") or ""
 
 def gen(text, out):
     text = " ".join(text.split())  # 개행/중복공백 정리

@@ -264,7 +264,7 @@
     if (!p) return '';
     if (p.type === 'cover') return [p.title, p.subtitle].filter(Boolean).join('. ');
     if (p.type === 'ending') return p.message || '';
-    return [p.title, p.body].filter(Boolean).join('. ');
+    return (p.body || '');  // 제목 제외, 동화 내용(body)만 낭독
   }
 
   function speakCurrent() {
