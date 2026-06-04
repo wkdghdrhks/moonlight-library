@@ -23,3 +23,6 @@
 | 2026-05-22 | 하네스 진화: librarian 에이전트 + library-home 스킬, doodle 프리셋, picture-long 장편 모드, 책 뷰어 챕터 목차/진행률 추가 | agents/librarian.md, skills/library-home/, skills/{art-direction,story-writing,book-viewer}/SKILL.md | 30+ 페이지 동물 모험 동화 요청 |
 | 2026-05-22 | 두 번째 책 추가: 『도토리 마을 구출 작전』 (32p, doodle) | books/02-acorn-village-rescue/ | 두 번째 동화 제작 |
 | 2026-05-29 | 세 번째 책 추가: 『종탑 위의 연우』 (20p, doodle, 이미지 수동 Gemini 생성) | books/03-bell-tower-yeonwoo/ | 세 번째 동화 제작 |
+| 2026-06-01 | 이미지 생성 백엔드에 **antigravity(agy)** 추가 — Google AI Pro 구독 OAuth만으로(API 키 미사용) Nano Banana 생성. `agy -p` 불가 → stdin 주입 + 파일 폴링 + Pillow PNG 재인코딩 방식. 신규 스킬 `antigravity-image`, `image-generation-batch`·illustrator 에 백엔드 선택 옵션 | .claude/skills/antigravity-image/{SKILL.md,scripts/}, .claude/skills/image-generation-batch/SKILL.md, .claude/agents/illustrator.md | 구독 CLI를 이미지 생성기로 활용 |
+| 2026-06-02 | 네 번째 책 추가: 『네버랜드의 연우』 (20p, agy 모험 수채화). **사람 목소리 낭독 도입** — edge-tts 신경망 음성(API 키 불필요)으로 페이지별 MP3 사전생성, `book.js`가 `page.audio` 우선 재생. 낭독은 제목 빼고 본문(body)만 | books/04-neverland-yeonwoo/, _workspace/generate_narration.py, books/*/book.js | 기계음 개선 요청 |
+| 2026-06-04 | 다섯 번째 책 추가: 『은빛 명견 연우와 들개 친구들』 (10p, agy 모험 수채화, 명견 실버 모티브). 낭독은 ko-KR-SunHi(엄마 톤 여성)로 통일, BGM은 모험·행진풍(갤로핑 베이스+영웅 멜로디 Web Audio 합성)으로 책별 커스텀 | books/05-silverfang-yeonwoo/ | 다섯 번째 동화 제작 |
