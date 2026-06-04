@@ -61,6 +61,21 @@
       ],
       "url": "books/04-neverland-yeonwoo/",
       "added": "2026-06-01"
+    },
+    {
+      "slug": "05-silverfang-yeonwoo",
+      "title": "은빛 명견 연우와 들개 친구들",
+      "subtitle": "산을 지킨 여섯 마리의 용감한 모험",
+      "cover": "books/05-silverfang-yeonwoo/images/cover.jpg",
+      "pages": 10,
+      "style": "모험 수채화",
+      "tags": [
+        "모험",
+        "우정",
+        "협동"
+      ],
+      "url": "books/05-silverfang-yeonwoo/",
+      "added": "2026-06-04"
     }
   ]
 }

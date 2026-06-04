@@ -6,7 +6,8 @@ import json, os, subprocess, sys
 
 ROOT = r"C:\DongHwa\moonlight-library\books"
 BOOKS = ["01-moonlight-library", "02-acorn-village-rescue",
-         "03-bell-tower-yeonwoo", "04-neverland-yeonwoo"]
+         "03-bell-tower-yeonwoo", "04-neverland-yeonwoo",
+         "05-silverfang-yeonwoo"]
 VOICE = "ko-KR-SunHiNeural"   # 따뜻한 여성 — 엄마가 읽어주는 톤
 RATE = "-10%"    # 살짝 느리게 — 자장가처럼 차분하게
 PITCH = "+0Hz"   # 자연스러운 음높이 유지(여성 톤은 낮추면 어색)
