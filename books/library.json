@@ -91,6 +91,21 @@
       ],
       "url": "books/06-yeonwoo-drawing-world/",
       "added": "2026-06-05"
+    },
+    {
+      "slug": "07-yeonwoo-art-gallery",
+      "title": "연우의 그림 전시회",
+      "subtitle": "연우가 그린 스물다섯 가지 알록달록 세상",
+      "cover": "books/07-yeonwoo-art-gallery/images/cover.jpg",
+      "pages": 27,
+      "style": "연우 그림·만들기",
+      "tags": [
+        "연우 그림",
+        "전시회",
+        "모음집"
+      ],
+      "url": "books/07-yeonwoo-art-gallery/",
+      "added": "2026-06-05"
     }
   ]
 }

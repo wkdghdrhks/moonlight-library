@@ -1,0 +1,248 @@
+{
+  "title": "연우의 그림 전시회",
+  "subtitle": "연우가 그린 스물다섯 가지 알록달록 세상",
+  "author": "그림 연우 · 글 AI 동화 작가",
+  "mode": "picture",
+  "chapters": [],
+  "pages": [
+    {
+      "type": "cover",
+      "image": "images/cover.jpg",
+      "title": "연우의 그림 전시회",
+      "subtitle": "연우가 그린 스물다섯 가지 알록달록 세상",
+      "author": "그림 연우 · 글 AI 동화 작가",
+      "audio": "audio/p00.mp3"
+    },
+    {
+      "type": "scene",
+      "number": 1,
+      "title": "큰 나무 위 매미들",
+      "body": "연우가 색종이를 접어 매미를 만들고, 커다란 나무에 콕콕 붙였어요. 초록 잎사귀 사이로 매미들이 \"맴맴~\" 노래하고, 나비와 애벌레도 놀러 왔지요. 여름 나무는 작은 친구들로 북적북적 신이 났답니다.",
+      "image": "images/scene_01.jpg",
+      "audio": "audio/p01.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 2,
+      "title": "책 위를 걷는 작은 모험가",
+      "body": "커다란 컵에서 따뜻한 김이 모락모락 피어오르고, 활짝 펼쳐진 책 위를 작은 사람이 폴짝폴짝 걸어가요. 책장을 한 장 넘기면 어떤 이야기가 펼쳐질까요? 연우의 그림 속에선 책 한 권도 멋진 모험이 된답니다.",
+      "image": "images/scene_02.jpg",
+      "audio": "audio/p02.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 3,
+      "title": "바닷속 종이 물고기",
+      "body": "연우가 색종이로 알록달록 물고기를 접어 바닷속에 풀어 주었어요. 흔들흔들 해초 사이로 거북이도 헤엄치고, 물고기들이 반짝반짝 춤을 춰요. 종이 한 장이 깊고 푸른 바다가 되었네요.",
+      "image": "images/scene_03.jpg",
+      "audio": "audio/p03.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 4,
+      "title": "부지런한 꿀벌과 벌집",
+      "body": "나뭇가지에 매달린 커다란 벌집, 그 주위로 부지런한 꿀벌들이 윙윙 날아다녀요. \"달콤한 꿀이 가득!\" 꿀벌들은 오늘도 신나게 일을 한답니다. 연우가 노란 크레용으로 꿀처럼 반짝이게 칠했어요.",
+      "image": "images/scene_04.jpg",
+      "audio": "audio/p04.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 5,
+      "title": "도토리 형제의 가을",
+      "body": "가을이 오자 통통한 도토리 두 알이 나무 아래 나란히 앉았어요. 보송보송 모자를 쓴 도토리 형제는 떨어지는 단풍잎을 바라보며 도란도란 이야기해요. 연우가 접은 도토리는 금방이라도 데구루루 굴러갈 것 같지요?",
+      "image": "images/scene_05.jpg",
+      "audio": "audio/p05.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 6,
+      "title": "통나무 속 작은 마을",
+      "body": "길쭉한 통나무 위로 무당벌레와 애벌레, 작은 벌레 친구들이 줄지어 기어가요. 잎사귀 그늘 아래는 벌레들의 아늑한 집이랍니다. 연우는 작디작은 친구들의 하루를 다정하게 그렸어요.",
+      "image": "images/scene_06.jpg",
+      "audio": "audio/p06.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 7,
+      "title": "악어가 사는 연못",
+      "body": "푸른 연못에 초록 악어 두 마리가 첨벙첨벙 헤엄쳐요. 입을 쩍 벌리고 \"안녕!\" 인사하지만 하나도 무섭지 않아요. 풀숲엔 새도 놀러 와 악어와 함께 노래한답니다.",
+      "image": "images/scene_07.jpg",
+      "audio": "audio/p07.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 8,
+      "title": "개구리의 낚시",
+      "body": "커다란 초록 개구리가 연잎 위에 서서 낚싯대를 살며시 드리웠어요. \"오늘은 무엇이 잡힐까?\" 퐁당퐁당 물결이 번지고, 작은 친구도 곁에서 응원해요. 연우의 연못은 개구리들의 즐거운 놀이터예요.",
+      "image": "images/scene_08.jpg",
+      "audio": "audio/p08.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 9,
+      "title": "풀밭의 아기 양",
+      "body": "울타리 너머 초록 풀밭에서 보송보송 하얀 아기 양들이 폴짝폴짝 뛰어놀아요. \"메에~\" 꽃향기 가득한 들판에서 양들은 배부르게 풀을 뜯지요. 연우가 그린 목장은 햇살처럼 포근하답니다.",
+      "image": "images/scene_09.jpg",
+      "audio": "audio/p09.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 10,
+      "title": "푸른 바다의 고래",
+      "body": "넓고 푸른 바다 위로 커다란 고래가 첨벙! 힘차게 뛰어올랐어요. 물보라가 햇빛에 반짝이고, 파도는 출렁출렁 춤을 춰요. 연우의 고래는 바다에서 가장 멋진 친구랍니다.",
+      "image": "images/scene_10.jpg",
+      "audio": "audio/p10.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 11,
+      "title": "으스스 핼러윈 밤",
+      "body": "보라색 밤하늘에 종이 유령들이 둥실둥실 떠다니고, 박쥐가 푸드덕 날아요. 호박등은 씨익 웃고, 낡은 성에는 작은 불빛이 깜빡깜빡. \"무서워도 재밌어!\" 연우의 핼러윈은 신나는 밤이에요.",
+      "image": "images/scene_11.jpg",
+      "audio": "audio/p11.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 12,
+      "title": "뽐내는 공작새",
+      "body": "화려한 공작새가 활짝 무지개 같은 깃털을 펼쳤어요. 알록달록 커다란 꼬리에 모두가 \"우아!\" 하고 감탄하지요. 초록 들판에서 공작새는 가장 멋진 춤을 춘답니다.",
+      "image": "images/scene_12.jpg",
+      "audio": "audio/p12.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 13,
+      "title": "깊은 바닷속 탐험",
+      "body": "깊고 푸른 바닷속, 불가사리와 물고기, 문어가 사이좋게 헤엄쳐요. 반짝이는 보물도 어딘가 숨어 있을까요? 연우와 함께 깊은 바다로 풍덩 탐험을 떠나 봐요.",
+      "image": "images/scene_13.jpg",
+      "audio": "audio/p13.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 14,
+      "title": "신나는 축제 한마당",
+      "body": "사람들이 모여 왁자지껄, 연우의 그림 속 마을에 즐거운 잔치가 열렸어요. 알록달록 옷을 입은 친구들이 어울려 노래하고 춤을 춰요. 웃음소리가 그림 밖까지 들리는 것 같지요?",
+      "image": "images/scene_14.jpg",
+      "audio": "audio/p14.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 15,
+      "title": "바다의 힘센 가재",
+      "body": "깊은 바닷속, 주황빛 커다란 가재가 집게를 번쩍 들었어요. 보글보글 물방울 사이로 작은 물고기들이 구경을 해요. \"내가 바다에서 제일 힘이 세!\" 가재가 으쓱으쓱한답니다.",
+      "image": "images/scene_15.jpg",
+      "audio": "audio/p15.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 16,
+      "title": "인어공주의 바다",
+      "body": "반짝이는 꼬리를 가진 인어공주가 산호 사이를 사뿐사뿐 헤엄쳐요. 물고기 친구들이 공주님을 졸졸 따라다니며 노래해요. 연우의 바닷속은 보석처럼 알록달록 빛난답니다.",
+      "image": "images/scene_16.jpg",
+      "audio": "audio/p16.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 17,
+      "title": "푸른 들판의 하루",
+      "body": "키 큰 초록 풀숲 사이로 친구들이 옹기종기 모여 무언가를 하고 있어요. 바람이 솔솔 불고 햇살은 따스해요. 연우의 그림 속 들판은 언제나 즐거운 이야기로 가득하답니다.",
+      "image": "images/scene_17.jpg",
+      "audio": "audio/p17.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 18,
+      "title": "친구들과 신나는 놀이",
+      "body": "넓은 마당에서 친구들이 폴짝폴짝 뛰어놀아요. 줄넘기하고, 달리고, 깔깔 웃다 보면 하루가 짧기만 해요. 연우의 그림엔 즐거운 웃음소리가 가득 담겼답니다.",
+      "image": "images/scene_18.jpg",
+      "audio": "audio/p18.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 19,
+      "title": "들판에서 곤충 잡기",
+      "body": "나비와 잠자리가 팔랑팔랑, 친구들이 채집통을 들고 곤충을 쫓아다녀요. \"저기 메뚜기다!\" 풀밭은 작은 탐험가들로 북적북적해요. 연우의 여름 들판은 보물찾기처럼 신난답니다.",
+      "image": "images/scene_19.jpg",
+      "audio": "audio/p19.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 20,
+      "title": "공룡들의 세상",
+      "body": "아주 먼 옛날, 목이 긴 공룡과 친구들이 넓은 들판을 쿵쿵 걸어다녀요. 선인장 사이로 햇살이 내리쬐고, 공룡들은 느긋하게 풀을 뜯지요. 연우가 그린 공룡 세상으로 시간 여행을 떠나 볼까요?",
+      "image": "images/scene_20.jpg",
+      "audio": "audio/p20.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 21,
+      "title": "\"대게가 최고야!\"",
+      "body": "\"우아, 내가 제일 좋아하는 대게다!\" 연우가 두 팔을 번쩍 들고 환하게 웃어요. 접시 위 새빨간 대게가 먹음직스럽게 김을 모락모락 내요. 맛있는 음식 앞에서는 누구나 신이 나지요.",
+      "image": "images/scene_21.jpg",
+      "audio": "audio/p21.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 22,
+      "title": "물놀이 가는 날",
+      "body": "친구들이 파란 물 위에서 첨벙첨벙 신나게 놀아요. 햇살은 반짝반짝, 물방울은 통통 튀어 올라요. 연우의 여름은 시원하고 즐거운 물놀이로 가득하답니다.",
+      "image": "images/scene_22.jpg",
+      "audio": "audio/p22.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 23,
+      "title": "북적북적 시장 구경",
+      "body": "골목마다 가게가 늘어서고, 사람들이 정답게 오가는 시끌벅적한 시장이에요. 맛있는 냄새와 반가운 인사 소리가 가득해요. 연우는 우리 동네의 따뜻한 하루를 그렸어요.",
+      "image": "images/scene_23.jpg",
+      "audio": "audio/p23.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 24,
+      "title": "즐거운 바닷가",
+      "body": "파도가 밀려오는 바닷가에서 사람들이 신나게 물놀이를 즐겨요. 모래밭엔 발자국이 콕콕 찍히고, 저 멀리 배도 둥둥 떠 있어요. 연우의 바닷가엔 시원한 바람과 웃음이 함께해요.",
+      "image": "images/scene_24.jpg",
+      "audio": "audio/p24.mp3",
+      "real_art": true
+    },
+    {
+      "type": "scene",
+      "number": 25,
+      "title": "단풍나무 아래 소풍",
+      "body": "새빨갛게 물든 커다란 단풍나무 아래, 가족과 친구들이 옹기종기 소풍을 왔어요. 바람이 불 때마다 단풍잎이 팔랑팔랑 떨어져 내려요. 연우가 그린 가을은 그림처럼 따뜻하고 포근하답니다.",
+      "image": "images/scene_25.jpg",
+      "audio": "audio/p25.mp3",
+      "real_art": true
+    },
+    {
+      "type": "ending",
+      "image": "images/scene_25.jpg",
+      "message": "연우의 손끝에서는 매미도, 공룡도, 바닷속 인어도 모두 살아 움직여요. 스물다섯 점의 그림 속엔 연우의 즐겁고 반짝이는 하루하루가 알록달록 담겨 있답니다. 다음엔 또 어떤 멋진 세상을 그리게 될까요?",
+      "audio": "audio/p26.mp3"
+    }
+  ]
+}
