@@ -1,0 +1,19 @@
+{
+  "style": "Children's naive crayon and colored-pencil drawing, drawn by a talented 7-year-old, waxy crayon texture, bold black marker outlines, bright cheerful primary colors, simple childlike shapes, flat naive perspective, white sketchbook paper background with subtle paper grain, hand-colored slightly-uneven look, warm innocent happy mood, absolutely no text no words no letters no captions.",
+  "character": "Yeonwoo, a cheerful 7-year-old child with short black hair and a round happy face with rosy cheeks, big simple smiling eyes, wearing a bright yellow t-shirt and blue pants.",
+  "cover": {
+    "filename": "cover.png",
+    "scene": "Book cover. Yeonwoo sitting at a desk holding crayons with a big happy smile, while a colorful amusement park (red looping roller coaster, big blue ferris wheel, yellow bumper cars) magically glows and floats up out of the white drawing paper in front of the child. Golden sparkles all around. Bright sky-blue background."
+  },
+  "scenes": [
+    {"filename": "page_01.png", "scene": "Yeonwoo sitting at a cozy wooden desk in a sunny room, holding a red crayon and happily coloring a big drawing of an amusement park on white paper, crayons scattered on the desk, warm focused joyful expression."},
+    {"filename": "page_03.png", "scene": "Yeonwoo floating in the air, being magically pulled into a glowing crayon drawing, body lifting up, swirling warm wind and golden sparkles all around, the amusement park drawing glowing brightly, surprised and excited expression with arms stretched out."},
+    {"filename": "page_04.png", "scene": "Yeonwoo riding high up inside a giant ferris wheel gondola, big blue ferris wheel turning with yellow pink and blue gondolas, fluffy white clouds nearby, looking down with wonder and joy, arms raised, bright blue sky."},
+    {"filename": "page_05.png", "scene": "Yeonwoo riding a red roller coaster in a green train car going around a big loop track, hair blowing back, both hands raised high, laughing with pure joy, red rails looping across a blue sky with white clouds."},
+    {"filename": "page_06.png", "scene": "Yeonwoo riding a yellow bumper car gripping the steering wheel, happily bumping into other colorful bumper cars, little fun sparks, laughing big, brown amusement park floor, cheerful and lively."},
+    {"filename": "page_07.png", "scene": "Yeonwoo standing at the edge of the amusement park in front of a glowing magical doorway, and through the doorway you can see green trees and a warm orange campfire of a camping scene, curious and excited expression, one hand touching the door, golden sparkles around the doorway."},
+    {"filename": "page_09.png", "scene": "Yeonwoo in a sunny green camping meadow joyfully hugging a small happy puppy that wags its tail, two friendly smiling children friends waving nearby, tall trees and colorful triangle bunting flags in the background, warm cheerful reunion."},
+    {"filename": "page_10.png", "scene": "Yeonwoo sitting with two friends and a puppy around a glowing red-orange campfire at dusk, sharing food from a round table, colorful flags fluttering, tall trees, early evening sky with first stars, cozy warm happy gathering."},
+    {"filename": "page_11.png", "scene": "Yeonwoo back in the cozy room sitting at the desk at sunset, two finished crayon drawings (an amusement park and a camping scene) lying on the desk, holding a crayon, content dreamy gentle smile, warm orange sunset light coming through the window."}
+  ]
+}

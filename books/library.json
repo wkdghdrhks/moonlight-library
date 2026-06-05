@@ -76,6 +76,21 @@
       ],
       "url": "books/05-silverfang-yeonwoo/",
       "added": "2026-06-04"
+    },
+    {
+      "slug": "06-yeonwoo-drawing-world",
+      "title": "연우가 그린 그림나라",
+      "subtitle": "크레용으로 떠나는 신나는 모험",
+      "cover": "books/06-yeonwoo-drawing-world/images/cover.jpg",
+      "pages": 4,
+      "style": "연우 크레용 그림",
+      "tags": [
+        "연우 그림",
+        "놀이동산",
+        "캠핑"
+      ],
+      "url": "books/06-yeonwoo-drawing-world/",
+      "added": "2026-06-05"
     }
   ]
 }
