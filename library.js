@@ -9,8 +9,7 @@
       { "slug": "03-bell-tower-yeonwoo", "title": "종탑 위의 연우", "subtitle": "하늘 가까운 곳에서 울려 퍼진 우정의 종소리", "cover": "books/03-bell-tower-yeonwoo/images/cover.jpg", "pages": 20, "style": "doodle", "tags": ["우정", "용기", "성장"], "url": "books/03-bell-tower-yeonwoo/", "added": "2026-05-29" },
       { "slug": "04-neverland-yeonwoo", "title": "네버랜드의 연우", "subtitle": "둘째 별을 지나, 어른이 되지 않는 섬으로", "cover": "books/04-neverland-yeonwoo/images/cover.jpg", "pages": 20, "style": "모험 수채화", "tags": ["모험", "우정", "용기"], "url": "books/04-neverland-yeonwoo/", "added": "2026-06-01" },
       { "slug": "05-silverfang-yeonwoo", "title": "은빛 명견 연우와 들개 친구들", "subtitle": "산을 지킨 여섯 마리의 용감한 모험", "cover": "books/05-silverfang-yeonwoo/images/cover.jpg", "pages": 10, "style": "모험 수채화", "tags": ["모험", "우정", "협동"], "url": "books/05-silverfang-yeonwoo/", "added": "2026-06-04" },
-      { "slug": "06-yeonwoo-drawing-world", "title": "연우가 그린 그림나라", "subtitle": "크레용으로 떠나는 신나는 모험", "cover": "books/06-yeonwoo-drawing-world/images/cover.jpg", "pages": 4, "style": "연우 크레용 그림", "tags": ["연우 그림", "놀이동산", "캠핑"], "url": "books/06-yeonwoo-drawing-world/", "added": "2026-06-05" },
-      { "slug": "07-yeonwoo-art-gallery", "title": "연우의 그림 전시회", "subtitle": "연우가 그린 스물다섯 가지 알록달록 세상", "cover": "books/07-yeonwoo-art-gallery/images/cover.jpg", "pages": 27, "style": "연우 그림·만들기", "tags": ["연우 그림", "전시회", "모음집"], "url": "books/07-yeonwoo-art-gallery/", "added": "2026-06-05" }
+      { "slug": "07-yeonwoo-art-gallery", "title": "연우의 그림 전시회", "subtitle": "연우가 그린 스물일곱 가지 알록달록 세상", "cover": "books/07-yeonwoo-art-gallery/images/cover.jpg", "pages": 29, "style": "연우 그림·만들기", "tags": ["연우 그림", "전시회", "모음집"], "url": "books/07-yeonwoo-art-gallery/", "added": "2026-06-05" }
     ]
   };
 
